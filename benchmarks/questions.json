@@ -1,0 +1,191 @@
+{
+  "suite_name": "OfflineMind Standard Local Evaluation Benchmark",
+  "version": "1.0.0",
+  "categories": [
+    {
+      "id": "basic_knowledge",
+      "name": "Basic Knowledge",
+      "description": "Evaluates fundamental definitions and factual accuracy without external lookup.",
+      "questions": [
+        {
+          "id": "bk-1",
+          "prompt": "Define Principal Component Analysis (PCA) and explain its primary objective.",
+          "expected_keywords": ["dimensionality reduction", "variance", "eigenvectors", "orthogonal", "projection"],
+          "difficulty": "Easy"
+        },
+        {
+          "id": "bk-2",
+          "prompt": "What is the difference between supervised and unsupervised learning?",
+          "expected_keywords": ["labeled data", "unlabeled", "target variable", "clustering", "ground truth"],
+          "difficulty": "Easy"
+        },
+        {
+          "id": "bk-3",
+          "prompt": "State the time complexity of QuickSort in best, average, and worst case scenarios.",
+          "expected_keywords": ["O(n log n)", "O(n^2)", "pivot selection", "partitioning"],
+          "difficulty": "Medium"
+        },
+        {
+          "id": "bk-4",
+          "prompt": "What is a Deterministic Finite Automaton (DFA) and what constitutes its 5-tuple?",
+          "expected_keywords": ["states", "alphabet", "transition function", "start state", "accept states"],
+          "difficulty": "Medium"
+        },
+        {
+          "id": "bk-5",
+          "prompt": "Explain the role of MQTT protocol in Internet of Things (IoT) architectures.",
+          "expected_keywords": ["publish-subscribe", "broker", "lightweight", "bandwidth", "TCP"],
+          "difficulty": "Medium"
+        }
+      ]
+    },
+    {
+      "id": "doc_understanding",
+      "name": "Document Understanding",
+      "description": "Tests context grounding, citation accuracy, and hallucination resistance.",
+      "questions": [
+        {
+          "id": "du-1",
+          "prompt": "According to the uploaded notes on K-Means, what are the stopping criteria for the algorithm?",
+          "expected_keywords": ["centroids do not change", "maximum iterations", "tolerance threshold", "convergence"],
+          "difficulty": "Medium"
+        },
+        {
+          "id": "du-2",
+          "prompt": "From the provided study material, what is the exact formula for Inertia / Within-Cluster Sum of Squares (WCSS)?",
+          "expected_keywords": ["sum", "squared distance", "cluster centroid", "points"],
+          "difficulty": "Hard"
+        },
+        {
+          "id": "du-3",
+          "prompt": "What does the provided document state regarding Dijkstra's algorithm with negative edge weights?",
+          "expected_keywords": ["cannot handle", "negative cycles", "Bellman-Ford", "greedy failure"],
+          "difficulty": "Medium"
+        },
+        {
+          "id": "du-4",
+          "prompt": "Identify the 3 UI/UX accessibility principles highlighted in Section 4 of the local design notes.",
+          "expected_keywords": ["contrast ratio", "keyboard navigation", "screen reader", "aria", "focus rings"],
+          "difficulty": "Medium"
+        },
+        {
+          "id": "du-5",
+          "prompt": "What is the recommended hyperparameter k in the Elbow method according to the loaded notes?",
+          "expected_keywords": ["inflection point", "elbow", "diminishing return", "distortion curve"],
+          "difficulty": "Easy"
+        }
+      ]
+    },
+    {
+      "id": "reasoning",
+      "name": "Reasoning & Problem Solving",
+      "description": "Evaluates logical deduction, algorithmic step-by-step thinking, and trade-off comparison.",
+      "questions": [
+        {
+          "id": "rs-1",
+          "prompt": "Compare Dynamic Programming vs Greedy Approach for the Fractional vs 0/1 Knapsack problem.",
+          "expected_keywords": ["optimal substructure", "greedy choice property", "fractions divisible", "table filling"],
+          "difficulty": "Hard"
+        },
+        {
+          "id": "rs-2",
+          "prompt": "If a dataset has high collinearity between 15 numeric variables, why is PCA preferred over removing random columns?",
+          "expected_keywords": ["information loss", "variance preservation", "multicollinearity", "uncorrelated components"],
+          "difficulty": "Hard"
+        },
+        {
+          "id": "rs-3",
+          "prompt": "Trace the step-by-step transition of a DFA recognizing binary strings ending in '01' on input '1001'.",
+          "expected_keywords": ["state transitions", "final state accepted", "step by step"],
+          "difficulty": "Hard"
+        },
+        {
+          "id": "rs-4",
+          "prompt": "Why does a 1B model struggle with multi-hop retrieval compared to a 3B or 7B model?",
+          "expected_keywords": ["attention span", "parameter capacity", "context synthesis", "coherence degradation"],
+          "difficulty": "Medium"
+        },
+        {
+          "id": "rs-5",
+          "prompt": "Evaluate the battery and network bandwidth trade-offs between HTTP polling vs MQTT keep-alive in sensor nodes.",
+          "expected_keywords": ["header overhead", "connection teardown", "sleep cycles", "packet size"],
+          "difficulty": "Medium"
+        }
+      ]
+    },
+    {
+      "id": "summarization",
+      "name": "Summarization & Synthesis",
+      "description": "Measures distillation of lengthy academic text into concise, high-density study points.",
+      "questions": [
+        {
+          "id": "sm-1",
+          "prompt": "Summarize the Bellman-Ford shortest path algorithm in 4 bullet points for quick exam revision.",
+          "expected_keywords": ["relax edges", "|V|-1 times", "detect negative cycles", "O(V*E) complexity"],
+          "difficulty": "Medium"
+        },
+        {
+          "id": "sm-2",
+          "prompt": "Create an executive 3-sentence summary of Support Vector Machines (SVM) highlighting margin maximization.",
+          "expected_keywords": ["hyperplane", "support vectors", "margin", "kernel trick"],
+          "difficulty": "Medium"
+        },
+        {
+          "id": "sm-3",
+          "prompt": "Extract the top 5 interview questions with brief answers on Automata Theory (Pumping Lemma & Turing Machines).",
+          "expected_keywords": ["non-regular languages", "tape", "halting problem", "decidability"],
+          "difficulty": "Hard"
+        },
+        {
+          "id": "sm-4",
+          "prompt": "Draft a 5-mark university exam answer explaining Master Theorem cases with examples.",
+          "expected_keywords": ["T(n) = aT(n/b) + f(n)", "log_b(a)", "case 1, 2, 3", "recursion tree"],
+          "difficulty": "Hard"
+        },
+        {
+          "id": "sm-5",
+          "prompt": "Synthesize key pros and cons of edge computing versus centralized cloud analytics.",
+          "expected_keywords": ["latency", "privacy", "bandwidth conservation", "compute limits", "device maintenance"],
+          "difficulty": "Easy"
+        }
+      ]
+    },
+    {
+      "id": "local_language",
+      "name": "Local Language (Marathi & Hindi)",
+      "description": "Validates bilingual semantic fidelity, technical explanations, and simplification without cloud APIs.",
+      "questions": [
+        {
+          "id": "ll-1",
+          "prompt": "Explain what Machine Learning is in simple Marathi (मराठी) with an everyday real-world example.",
+          "expected_keywords": ["मशीन लर्निंग", "अल्गोरिदम", "डेटा", "उदा.", "शिकणे"],
+          "difficulty": "Medium"
+        },
+        {
+          "id": "ll-2",
+          "prompt": "Define 'Overfitting' and 'Underfitting' in clear Hindi (हिंदी) for a 2nd year engineering student.",
+          "expected_keywords": ["ओवरफिटिंग", "अंडरफिटिंग", "ट्रेनिंग डेटा", "मॉडल", "सटीकता"],
+          "difficulty": "Medium"
+        },
+        {
+          "id": "ll-3",
+          "prompt": "Translate and simplify the concept of Time Complexity (Big-O notation) into Marathi with a library search analogy.",
+          "expected_keywords": ["वेळ गुंतागुंत", "बिग-ओ नोटेशन", "पुस्तकालय", "कार्यक्षमता"],
+          "difficulty": "Hard"
+        },
+        {
+          "id": "ll-4",
+          "prompt": "Explain in Hindi how an IoT sensor transmits data to a gateway via Bluetooth Low Energy (BLE).",
+          "expected_keywords": ["सेंसर", "गेटवे", "कम ऊर्जा", "डेटा ट्रांसमिशन"],
+          "difficulty": "Medium"
+        },
+        {
+          "id": "ll-5",
+          "prompt": "Provide a 5-point viva revision in Marathi for 'Breadth-First Search (BFS)' including Queue data structure.",
+          "expected_keywords": ["BFS", "रांग (Queue)", "ग्राफ ट्रॅव्हर्सल", "FIFO", "पातळीनुसार"],
+          "difficulty": "Hard"
+        }
+      ]
+    }
+  ]
+}

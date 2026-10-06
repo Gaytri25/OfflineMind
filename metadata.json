@@ -1,0 +1,8 @@
+{
+  "name": "OfflineMind – Local AI Exam Tutor",
+  "description": "Your personal offline AI exam tutor. Interactive exam preparation, personal-document revision, viva practice, and quizzes running 100% locally on modest hardware with zero cloud APIs.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
