@@ -4,6 +4,7 @@
 
 OfflineMind is a complete, private, offline-first AI knowledge assistant designed to demonstrate that useful, document-grounded AI can run on modest local hardware without cloud APIs, subscription fees, or internet access.
 
+#Solution - "https://offlinemind-local-ai-exam-tutor.ai.studio/"
 ---
 
 ## 🟢 Core Highlights
